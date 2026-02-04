@@ -1,0 +1,69 @@
+
+--- HAKU: Drifting suomi ---
+"UCR9bEqWxOhmeT-vo88kyLFQ", # Black Smoke Ltd
+"UCPfNSCJT2fQqcmB61B2cHRA",
+"UCJVScxGxdOiOuQjZq2DqoEg", #Heinonen Drift Team
+"UCBldqXFAEd6tgkVuGYMIFqQ", #"Makosa Drift Team": 
+"UCVM7vvLnGDi0SK8Vld28wcQ", #"Suomen Drifting Ry  / FPDA": 
+"UC6rwUxdTOtORA3KL3q3r7pQ", #"Drift Masters": 
+"UCbdlowxL1Zh7Kg8Vmo7MLkA", #"Krisse Aalto": 
+"UC1dz3Um11FVIS1oJ_pwMsrA", #"Lehmusvaara Drift Team": 
+"UCftLLnzPHFDbV0unzM474Qg", #"Sladidas Drift Team": 
+"UCgyHegUifj6hN58pkvAdRZQ", #"Elena Helme": 
+"UCIAcrajtxc1NtayJWIYoaQg", #"Drifti pojat": 
+"UCgjDDiRsPvghsZ3ZQ59eSXA", #"KaukonenCast": 
+"UCADIPaW4yjyzaCLvdoAQZtA", #"Koskela Motorsport": 
+"UCXvoTU9ZOs4v2JNObQ_au8g", #"Tase": 
+"UCEzKtxz7e_DwBLXrupza0qA", #"DankkeRacing"
+
+--- HAKU: Jokkis ---
+"UCiAI4ZEa1Ne5hAbc_eWHYpQ", # JM-Jokkis
+"UCrPnnQk3QcKQ4_MrXiRbQIg", # jokkis kisat
+
+
+--- HAKU: Rallicross ---
+"UCXGngJAepcvg2n_1MXOQR-Q", # Rallicross Suomi
+"UCglJeNL8oN9YdURG1g2IoDw", # Rallicross Podcast
+"UCmhTfY94nlBKbDG44JuV4wQ", # Leistilä Racing
+"UCA24BqX7ASgPbI1hf_tpY3g", # PKS- Racing
+"UCvPiJx-CS51voG0QGPyay0g", # hh Racing
+"UCk508egX0VyPzNAe9Kmq0fA", # Mullet Racing 
+"UCnwFWjc9jiNrHTypapKG98A", # TiKrx
+
+
+--- HAKU: Ralli ---
+"UCzAAk7FOZZK8aXo53flddAg", # Secto Rally Finland
+"UCaYHKu-tT5sRHLWm9g5ArAg", # RallyFinland
+"UCvy-jI6HhYaYwi44cYCijHw", # Pohjois-suomen ralliryhmä
+"UCGBTnx1QmNqiqkvkx4Lp0LQ", # Juha Partanen
+
+
+
+--- HAKU: Projektit ---
+"UCvqXVKzPg9TWRIsiGCfiXIw", # Ikuisten Projektien Paja
+"UCwec04p1QgiVlM2gS1oQ3tg", # Päättömät Projektit
+
+
+--- HAKU: Projektit ---
+"UCai3QOvehlUBtM1lz9aD2VQ", # Lauri Valkama
+"UCA3AssnoNhYO52_RPPPusYg", # JunnuLatela
+"UCDGbcZh2sGrEtZW-ObW_Fqw", # LATELA Suomi
+"UCs776iGXY3X5FmcdvmBVjRQ", # Latela
+"UCQTG99cJ_tqiWl59HTjbqIw", # latela
+
+
+--- HAKU: Simracing ---
+"UCbKZGjHkuK7fUwVbXLC4XRQ", # Finnish Auto Simracing Team
+"UC5JHBmUBDSDo5dvzA0mdW3Q", # Finnish Sim Racing Association ry
+"UCLYyAVOFo2V-FdIdmOau2Rw", # GT Finland Racers / Blue
+"UCgyw7dP944rhghWzdK_pwEQ", # Sahko SimRacing
+"UCOvrWtsQKlzI0C14tvrQDnQ", # F1 Suomi-Sarja
+"UCQKxpnjxe87upiYzTaN9loA", # Hallaperä Racing Team
+"UCNz2wTD1VGi87eZBG2NoM8Q", # fixpee
+"UCwx_SP9U9eB30-nE7ilk76g", # OJK
+"UCU-ZIPFU02R6bGsff1-biMg", # eJokkis
+"UCuuVY12QK3HwdfRP4Ogd69Q", # GTFR
+"UCHpNk8NleVQNVh4fSp6nBRw", # Pinguliiga
+"UCpvyBO_G6zKLZPPOFFOcC9Q", # TeeHoo
+"UCcRvuX6E5vD4kwCDNS4F6jg", # JaniR
+"UCrdD82TOsaipBtYmJMJ3hnw", # vjollila96

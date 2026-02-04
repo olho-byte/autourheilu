@@ -1,0 +1,365 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Harrastemoottoriurheilun Keskusjärjestö Ry - ECPv6.15.15//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Harrastemoottoriurheilun Keskusjärjestö Ry
+X-ORIGINAL-URL:https://harrastemoottoriurheilu.fi
+X-WR-CALDESC:Tapahtumat Harrastemoottoriurheilun Keskusjärjestö Ry
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-Robots-Tag:noindex
+X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:Europe/Helsinki
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:20250330T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:20251026T010000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:20260329T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:20261025T010000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:20270328T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:20271031T010000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260207
+DTEND;VALUE=DATE:20260208
+DTSTAMP:20260203T095945
+CREATED:20251125T185953Z
+LAST-MODIFIED:20260121T120718Z
+UID:6104-1770422400-1770508799@harrastemoottoriurheilu.fi
+SUMMARY:Tornio Rallisprint
+DESCRIPTION:Aika: 7.2.2026 \nPaikka: Tornio \nLaji: Rallisprint \nArvo: Itä-Pohjoinen Rallisprint-sarja \nJärjestäjä: Tornion Ralliharrastajat ry. \nKilpailukutsu: https://www.rallitulokset.fi/Lomake4/Kilpailukutsu.pdf \nIlmoittautuminen: https://www.rallitulokset.fi/Lomake4/ \nLähtöluettelo: \nKilpailijainfo: https://www.rallitulokset.fi/Lomake4/
+URL:https://harrastemoottoriurheilu.fi/event/rallisprint-tornio/
+CATEGORIES:Rallisprint
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/11/Tornio-Rallisprint.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260209
+DTSTAMP:20260203T095945
+CREATED:20251014T170551Z
+LAST-MODIFIED:20260126T051652Z
+UID:5982-1770508800-1770595199@harrastemoottoriurheilu.fi
+SUMMARY:Konepalvelu Väissi Rallisprint
+DESCRIPTION:Aika: 8.2.2026 \nPaikka: Kauvatsan kylä\, Kokemäki \nLaji: Rallisprint \nArvo: JMS-Technic Rallisprint-sarja 2026 \nJärjestäjä: Tyrvään moottorikerho ry. \nKilpailukutsu: http://ajaksi.fi/wp/wp-content/uploads/2025/12/Konepalvelu_Vaissi_Rallisprint_Saannot_2026.pdf \nIlmoittautuminen: https://ajaksi.fi/hallinto/kilpailija.php \nLähtöluettelo: \nKilpailijainfo: JMS-Technic Rallisprint-sarja 2026: https://www.jmstechnic-rallisprintsarja.fi/ \nHUOM! Mukana myös Crosskart Xtrem- ja Xtrem Junior-luokat \nRata-esittely: https://youtu.be/CRez7qy734M?si=c2_R9GINaB_YNvz5 \nSarjailmoittautuminen: https://ajaksi.fi/wp/jms-technic-rallisprint-sarja-2026/
+URL:https://harrastemoottoriurheilu.fi/event/rallisprint-sastamala-3/
+CATEGORIES:Rallisprint
+ATTACH;FMTTYPE=image/png:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/Konepalvelu-Vaissi-Rallisprint.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260214
+DTEND;VALUE=DATE:20260215
+DTSTAMP:20260203T095945
+CREATED:20251002T083325Z
+LAST-MODIFIED:20260118T142232Z
+UID:5925-1771027200-1771113599@harrastemoottoriurheilu.fi
+SUMMARY:Kontiolahti Ralli
+DESCRIPTION:Aika: 14.2.2026 \nPaikka: Kontiolahti \nLaji: Ralli \nArvo: Pohjoinen Talvimestaruus 2026 \nJärjestäjä: Kontio-Racing ry. \nKilpailukutsu: https://www.rallitulokset.fi/Lomake11/Kilpailukutsu.pdf \nIlmoittautuminen: https://www.rallitulokset.fi/Lomake11/ \nLähtöluettelo: \nKilpailijainfo: \nLisätiedot:
+URL:https://harrastemoottoriurheilu.fi/event/kontiolahti-ralli-6/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/IMG-20260118-WA0002.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260214
+DTEND;VALUE=DATE:20260215
+DTSTAMP:20260203T095945
+CREATED:20251008T135439Z
+LAST-MODIFIED:20251222T180125Z
+UID:5936-1771027200-1771113599@harrastemoottoriurheilu.fi
+SUMMARY:Toivakka Ralli
+DESCRIPTION:Aika: 14.2.2026 \nPaikka: Toivakka \nLaji: Ralli \nArvo: Autotarvike Rallisarja 2026 \nJärjestäjä: Yellow Racing Team ry. \nKilpailukutsu: http://ajaksi.fi/wp/wp-content/uploads/2025/12/Kilpailukutsu-Toivakka-ralli-14.2.2026-V1.0-1.pdf \nIlmoittautuminen: https://ajaksi.fi/hallinto/kilpailija.php \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/toivakka-ralli-2/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/Toivakka-Ralli2.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260221
+DTEND;VALUE=DATE:20260222
+DTSTAMP:20260203T095945
+CREATED:20251008T155453Z
+LAST-MODIFIED:20260119T111922Z
+UID:5949-1771632000-1771718399@harrastemoottoriurheilu.fi
+SUMMARY:Kemi Ralli
+DESCRIPTION:Aika: 21.2.2026 \nPaikka: Kemi \nLaji: Ralli \nArvo: Pohjoinen Talvimestaruus 2026 \nJärjestäjä: Kemin Ykkösautourheilijat ry. \nKilpailukutsu: https://www.rallitulokset.fi/Lomake12/Kilpailukutsu.pdf \nIlmoittautuminen: https://www.rallitulokset.fi/Lomake12/ \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/5949/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/Screenshot_20260110_134306_TypeApp.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260222
+DTEND;VALUE=DATE:20260223
+DTSTAMP:20260203T095945
+CREATED:20251014T171222Z
+LAST-MODIFIED:20260127T161420Z
+UID:5986-1771718400-1771804799@harrastemoottoriurheilu.fi
+SUMMARY:SWM Rallisprint
+DESCRIPTION:Aika: 22.2.2026 \nPaikka: Marttila \nLaji: Rallisprint \nArvo: JMS-Technic Rallisprint-sarja 2026 \nJärjestäjä: South West Motorsport ry. \nKilpailukutsu: https://www.mut-palvelu.fi/2026/rallisprint/swm_marttila/swm_marttila_sprint_2026v2.pdf \nIlmoittautuminen: https://forms.gle/XMphwA26pnwbsDW2A \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/marttila-rallisprint-3/
+CATEGORIES:Rallispecial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260228
+DTEND;VALUE=DATE:20260301
+DTSTAMP:20260203T095945
+CREATED:20251008T135804Z
+LAST-MODIFIED:20251201T145112Z
+UID:5939-1772236800-1772323199@harrastemoottoriurheilu.fi
+SUMMARY:Mega-Ralli\, Keuruu
+DESCRIPTION:Aika: 28.2.2026 \nPaikka: Keuruu \nLaji: Ralli \nArvo: Autotarvike Rallisarja 2026 \nJärjestäjä: Moottoriurheilukeskus ry. \nKilpailukutsu: https://autotarvikerallisarja.fi/28-2-2026-keuruu/ \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/keuruu-ralli-4/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/png:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/Megaralli-mainos.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260308
+DTEND;VALUE=DATE:20260309
+DTSTAMP:20260203T095945
+CREATED:20251125T190108Z
+LAST-MODIFIED:20251202T094321Z
+UID:6106-1772928000-1773014399@harrastemoottoriurheilu.fi
+SUMMARY:Rallisprint\, Rautavaara
+DESCRIPTION:Aika: 8.3.2026 \nPaikka: Rautavaara \nLaji: Rallisprint \nArvo: Itä-Pohjoinen Rallisprint-sarja \nJärjestäjä: \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/rallisprint-rautavaara/
+CATEGORIES:Rallisprint
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260314
+DTEND;VALUE=DATE:20260315
+DTSTAMP:20260203T095945
+CREATED:20251009T170219Z
+LAST-MODIFIED:20260121T120927Z
+UID:5959-1773446400-1773532799@harrastemoottoriurheilu.fi
+SUMMARY:Kuhmo Ralli
+DESCRIPTION:Aika: 14.3.2026 \nPaikka: Kuhmo \nLaji: Ralli \nArvo: Pohjoinen Talvimestaruus 2026 \nJärjestäjä: Ralli Team Kainuu ry. \nKilpailukutsu: https://www.rallitulokset.fi/Lomake8/Kilpailukutsu.pdf \nIlmoittautuminen: https://www.rallitulokset.fi/Lomake8/ \nLähtöluettelo: \nKilpailijainfo: https://www.rallitulokset.fi/Lomake8/
+URL:https://harrastemoottoriurheilu.fi/event/kuhmo-ralli-2/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/Kuhmoralli2026_mainos_some.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260314
+DTEND;VALUE=DATE:20260315
+DTSTAMP:20260203T095945
+CREATED:20260128T102009Z
+LAST-MODIFIED:20260129T150831Z
+UID:6940-1773446400-1773532799@harrastemoottoriurheilu.fi
+SUMMARY:VRC Winter Rallispecial
+DESCRIPTION:Aika: 14.3.2026 \nPaikka: Vesilahti \nLaji: Rallispecial \nArvo: \nJärjestäjä: Vesilahti Racing Company ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/vrc-winter-rallispecial/
+CATEGORIES:Rallispecial
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2026/01/vrc.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+DTSTAMP:20260203T095945
+CREATED:20251125T190536Z
+LAST-MODIFIED:20260108T083815Z
+UID:6113-1777766400-1777852799@harrastemoottoriurheilu.fi
+SUMMARY:Xmeal Asfalttiralli
+DESCRIPTION:Aika: 3.5.2026 \nPaikka: Karjalohja \nLaji: Ralli \nArvo: \nJärjestäjä: South West Motorsport ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/swm-asfalttiralli/
+CATEGORIES:Ralli
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20260510
+DTSTAMP:20260203T095945
+CREATED:20251008T135930Z
+LAST-MODIFIED:20251204T110920Z
+UID:5941-1778284800-1778371199@harrastemoottoriurheilu.fi
+SUMMARY:Autohuolto.com Ralli\, Sastamala
+DESCRIPTION:Aika: 9.5.2026 \nPaikka: Sastamala \nLaji: Ralli \nArvo: Autotarvike Rallisarja 2026 \nJärjestäjä: Tyrvään moottorikerho ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo: www.autohuoltocomralli.fi
+URL:https://harrastemoottoriurheilu.fi/event/sastamala-ralli-3/
+CATEGORIES:Ralli
+ATTACH;FMTTYPE=image/png:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/10/AutohuoltoComRalliLogo_lapinakyvatausta.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260509
+DTEND;VALUE=DATE:20260510
+DTSTAMP:20260203T095945
+CREATED:20251014T162639Z
+LAST-MODIFIED:20251014T162639Z
+UID:5971-1778284800-1778371199@harrastemoottoriurheilu.fi
+SUMMARY:Arkala JR
+DESCRIPTION:Kilpailukutsu ja ilmoittautuminen: https://jokkisrace.net/index.php?Sivu=kilpailut/show_kisa.php&id=288
+URL:https://harrastemoottoriurheilu.fi/event/arkala-jr-2/
+LOCATION:OuluZone\, Kuusamontie 3250\, Ylikiiminki\, 91310
+CATEGORIES:JokkisRace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260517
+DTSTAMP:20260203T095945
+CREATED:20251014T162739Z
+LAST-MODIFIED:20251014T162739Z
+UID:5973-1778889600-1778975999@harrastemoottoriurheilu.fi
+SUMMARY:JR Uljua
+DESCRIPTION:Kilpailukutsu ja ilmoitttautuminen: https://jokkisrace.net/index.php?Sivu=kilpailut/show_kisa.php&id=291
+URL:https://harrastemoottoriurheilu.fi/event/jr-uljua-3/
+LOCATION:Uljuan Moottorirata\, Haapavuorentie\, Pulkkila\, 92600
+CATEGORIES:JokkisRace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+DTSTAMP:20260203T095945
+CREATED:20251125T190634Z
+LAST-MODIFIED:20251128T105038Z
+UID:6115-1779494400-1779580799@harrastemoottoriurheilu.fi
+SUMMARY:Harjoitusralli / Testi-EK\, Sastamala
+DESCRIPTION:Aika: 23.5.2026 \nPaikka: Sastamala \nLaji: Ralli \nArvo: \nJärjestäjä: Tyrvään moottorikerho ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/harjoitusralli/
+CATEGORIES:Ralli
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260607
+DTSTAMP:20260203T095945
+CREATED:20251014T162844Z
+LAST-MODIFIED:20251113T171331Z
+UID:5975-1780704000-1780790399@harrastemoottoriurheilu.fi
+SUMMARY:Kinnunen Motorsport JokkisRace
+DESCRIPTION:Kilpailukutsu ja ilmoittautuminen: https://jokkisrace.net/index.php?Sivu=kilpailut/show_kisa.php&id=290
+URL:https://harrastemoottoriurheilu.fi/event/kinnunen-motorsport-jr/
+LOCATION:Aittokosken rata\, Emäjoentie 71\, Suomussalmi\, 89600
+CATEGORIES:JokkisRace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260628
+DTSTAMP:20260203T095945
+CREATED:20251008T140216Z
+LAST-MODIFIED:20251009T170550Z
+UID:5943-1782518400-1782604799@harrastemoottoriurheilu.fi
+SUMMARY:PH-Peltiasennus Ralli
+DESCRIPTION:Aika: 27.6.2026 \nPaikka: Siuntio \nLaji: Ralli \nArvo: Autotarvike Rallisarja 2026 \nJärjestäjä: South West Motorsport ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/ph-peltiasennus-ralli/
+CATEGORIES:Ralli
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260719
+DTSTAMP:20260203T095945
+CREATED:20251014T165448Z
+LAST-MODIFIED:20260108T083935Z
+UID:5980-1784246400-1784419199@harrastemoottoriurheilu.fi
+SUMMARY:Lappeenranta Ralli
+DESCRIPTION:Aika: 17.-18.7.2026 \nPaikka: Lappeenranta \nLaji: Ralli \nArvo: \nJärjestäjä: Hartialukko Racing ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/lappeenranta-ralli/
+CATEGORIES:Ralli
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+DTSTAMP:20260203T095945
+CREATED:20251126T184055Z
+LAST-MODIFIED:20251126T184202Z
+UID:6130-1786147200-1786233599@harrastemoottoriurheilu.fi
+SUMMARY:Turun Ajovaruste Rallisprint
+DESCRIPTION:Aika: 8.8.2026 \nPaikka: Paimio \nLaji: Rallisprint \nArvo: BLCS Asfalttimestaruussarja 2026 \nJärjestäjä: South West Motorsport ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/turun-ajovaruste-rallisprint-paimio/
+CATEGORIES:Rallisprint
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+DTSTAMP:20260203T095945
+CREATED:20251125T190311Z
+LAST-MODIFIED:20251125T190311Z
+UID:6111-1786752000-1786838399@harrastemoottoriurheilu.fi
+SUMMARY:Rallisprint\, Siikajoki
+DESCRIPTION:Aika: 15.8.2026 \nPaikka: Siikajoki \nLaji: Rallisprint \nArvo: Itä-Pohjoinen Rallisprint-sarja \nJärjestäjä: \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/rallisprint-siikajoki-2/
+CATEGORIES:Rallisprint
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+DTSTAMP:20260203T095945
+CREATED:20251014T163213Z
+LAST-MODIFIED:20251014T163213Z
+UID:5977-1787356800-1787443199@harrastemoottoriurheilu.fi
+SUMMARY:Euroopan Kulttuurikaupunki 2026 JR SM
+DESCRIPTION:Kilpailukutsu ja ilmoittautuminen: https://jokkisrace.net/index.php?Sivu=kilpailut/show_kisa.php&id=289
+URL:https://harrastemoottoriurheilu.fi/event/euroopan-kulttuurikaupunki-2026-jr-sm/
+LOCATION:OuluZone\, Kuusamontie 3250\, Ylikiiminki\, 91310
+CATEGORIES:JokkisRace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Helsinki:20260822T110000
+DTEND;TZID=Europe/Helsinki:20260822T160000
+DTSTAMP:20260203T095945
+CREATED:20251125T191149Z
+LAST-MODIFIED:20260106T173746Z
+UID:6121-1787396400-1787414400@harrastemoottoriurheilu.fi
+SUMMARY:Saunamaailma.pro Rallisprint
+DESCRIPTION:Aika: 22.8.2026 \nPaikka: Sastamala \nLaji: Rallisprint \nArvo: JMS-Technic Rallisprint-sarja 2026 \nJärjestäjä: Tyrvään moottorikerho ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/saunamaailma-pro-rallisprint-3/
+CATEGORIES:Rallisprint
+ATTACH;FMTTYPE=image/jpeg:https://harrastemoottoriurheilu.fi/wp-content/uploads/2025/11/Mainos2026.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+DTSTAMP:20260203T095945
+CREATED:20251125T191324Z
+LAST-MODIFIED:20251125T191324Z
+UID:6123-1787961600-1788047999@harrastemoottoriurheilu.fi
+SUMMARY:Maanrakennus Sjöberg Rallispecial
+DESCRIPTION:Aika: 29.8.2026 \nPaikka: Tammisaari \nLaji: Rallispecial \nArvo: \nJärjestäjä: South West Motorsport ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/maanrakennus-sjoberg-rallispecial/
+CATEGORIES:Rallispecial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+DTSTAMP:20260203T095945
+CREATED:20251125T191446Z
+LAST-MODIFIED:20260127T205157Z
+UID:6125-1788566400-1788652799@harrastemoottoriurheilu.fi
+SUMMARY:Rallisprint\, Sastamala
+DESCRIPTION:Aika: 5.9.2026 \nPaikka: Sastamala \nLaji: Rallisprint \nArvo: JMS-Technic Rallisprint-sarja 2026 \nJärjestäjä: Tyrvään moottorikerho ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/rallisprint-sastamala-4/
+CATEGORIES:Rallisprint
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20260203T095945
+CREATED:20251008T140340Z
+LAST-MODIFIED:20251009T170533Z
+UID:5945-1789171200-1789257599@harrastemoottoriurheilu.fi
+SUMMARY:Parkano Ralli
+DESCRIPTION:Aika: 12.9.2026 \nPaikka: Parkano \nLaji: Ralli \nArvo: Autotarvike Rallisarja 2026 \nJärjestäjä: Satapirkan Ralliseura ry. \nKilpailukutsu: \nIlmoittautuminen: \nLähtöluettelo: \nKilpailijainfo:
+URL:https://harrastemoottoriurheilu.fi/event/5945/
+CATEGORIES:Ralli
+END:VEVENT
+END:VCALENDAR
