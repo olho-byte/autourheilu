@@ -1,0 +1,41 @@
+name: Paivita Motorsport Tube
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Ajaa joka yö klo 04:00 UTC (n. 06:00 tai 07:00 Suomen aikaa)
+  workflow_dispatch: # Mahdollistaa napin painamisen manuaalisesti
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Hae koodi
+      uses: actions/checkout@v4
+
+    - name: 2. Asenna Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: 3. Asenna kirjastot
+      run: pip install -r requirements.txt
+
+    - name: 4. Aja kalenterin tuonti
+      run: python tuo_kalenteri.py
+
+    - name: 5. Aja sivuston luonti
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      run: python luo_sivusto.py
+
+    - name: 6. Julkaise sivu
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        publish_branch: gh-pages
+        keep_files: true
