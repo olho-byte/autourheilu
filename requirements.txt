@@ -1,0 +1,7 @@
+google-api-python-client
+pandas
+python-dotenv
+icalendar
+openpyxl
+jinja2
+lxml
