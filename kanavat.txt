@@ -19,6 +19,14 @@
 --- HAKU: Jokkis ---
 "UCiAI4ZEa1Ne5hAbc_eWHYpQ", # JM-Jokkis
 "UCrPnnQk3QcKQ4_MrXiRbQIg", # jokkis kisat
+"Jokkis Katsomo": UCQDRdu6Db_kZYURR54ZLlDQ
+"Jokkis JV team": UCuZdbSEcugLn-dMrVV1U6QA
+"Perälä RX": UCHueFfPStwTovJGG6LSFkvg
+"Tomi Kallio": UCna6rA7Jc07bzicfRYwI-Qg
+"Toni Ketomäki": UCIpFk1qm0J_HALZ9nguquQQ
+"Kirwelä Racing": UCmLLwfXz-iw290tf68JoyBg
+"Toni Tiainen": UCCvVrhkxtLSgEizM8U7_m4A
+"Hälvän paja": UCJwGov-cX06KCM_9DJqrWTA
 
 
 --- HAKU: Rallicross ---
@@ -36,15 +44,23 @@
 "UCaYHKu-tT5sRHLWm9g5ArAg", # RallyFinland
 "UCvy-jI6HhYaYwi44cYCijHw", # Pohjois-suomen ralliryhmä
 "UCGBTnx1QmNqiqkvkx4Lp0LQ", # Juha Partanen
+"Juha Partanen": UCGBTnx1QmNqiqkvkx4Lp0LQ
+"Korsu Racing | Rallivideoita | Vlogeja ": UCZez1ry8UOgPWubuTJWKIAQ
+"AL Rallymedia Extra": UCcEZi10UTE4bp_zNIMsd9nw
+"Rallyvideos - Suomi": UCJMsi8YEfcf6_1rS8dm4irg
+"Räsänen Motorsport": UC6EqtdShdQ3S3Qa5O9QiHxw
+"Tassumäki Motorsport": UCpG8t2fqsvosdVPt8wUp3Jw
+"Mika Ilomäki": UCBLeIXWUWjWH3vUT3_AzOBw
+"Jaro Kinnunen": UC_rTpO_BJ6HTZZqSCEuPMXw
+"Saku Kinnunen": UC70PslO93GRJ_cvBpjK8kfQ
+"KinnunenMotorsport": UC9UtIFdH4VKFXfspbJfjOVg
+"Noora Race": UCCxcmR_NkCoqwl6z503U1RA
 
 
 
 --- HAKU: Projektit ---
 "UCvqXVKzPg9TWRIsiGCfiXIw", # Ikuisten Projektien Paja
 "UCwec04p1QgiVlM2gS1oQ3tg", # Päättömät Projektit
-
-
---- HAKU: Projektit ---
 "UCai3QOvehlUBtM1lz9aD2VQ", # Lauri Valkama
 "UCA3AssnoNhYO52_RPPPusYg", # JunnuLatela
 "UCDGbcZh2sGrEtZW-ObW_Fqw", # LATELA Suomi
