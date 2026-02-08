@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorsport Tube 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link {% if sivu == 'etusivu' %}active{% endif %}">Etusivu</a>
+            <a href="kalenteri.html" class="nav-link {% if sivu == 'kalenteri' %}active{% endif %}">Kilpailukalenteri</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% if sivu == 'etusivu' %}
+        <div id="home-content">
+            <h1 style="text-align:center; font-weight: 900; font-style: italic; margin: 10px 0 30px 0; font-size: 2.5rem;">MOTORSPORT <span style="color:var(--accent)">TUBE</span></h1>
+            
+            <div class="cat-section">
+                <h3 class="section-header">Videokirjasto</h3>
+                <div class="cat-grid">
+                    {% for genre in video_data.keys() %}
+                    <div class="cat-card" onclick="showCategory('{{ genre }}')">
+                        <div class="cat-icon">▶</div>
+                        <h3 class="cat-title">{{ genre }}</h3>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="content-split">
+                <div>
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="videoSearch" class="search-input" placeholder="Etsi videoita..." onkeyup="searchVideos()">
+                    </div>
+
+                    <div class="sort-controls">
+                        <h3 id="list-title" class="section-header" style="margin:0; border:none;">🔥 Viikon katsotuimmat</h3>
+                        <select id="home-sort" class="sort-select" onchange="updateHomeSort()">
+                            <option value="views">Suosituimmat</option>
+                            <option value="newest">Uusimmat</option>
+                        </select>
+                    </div>
+                    
+                    <div id="home-video-list" class="video-grid"></div>
+                </div>
+
+                <div>
+                    <div class="sidebar-card">
+                        <div class="section-header">📅 Tulossa lähipäivinä</div>
+                        {% if viikon_tapahtumat %}
+                            {% for t in viikon_tapahtumat %}
+                            <div class="mini-event">
+                                <div class="me-date">{{ t.pvm.split('.')[0] }}.{{ t.pvm.split('.')[1] }}.</div>
+                                <div class="me-info">
+                                    <span class="me-title">{{ t.nimi }}</span>
+                                    <span class="me-meta">{{ t.laji }}</span>
+                                </div>
+                                <span class="mini-badge badge-{{ t.lahde.lower() }}">{{ t.lahde }}</span>
+                            </div>
+                            {% endfor %}
+                            <a href="kalenteri.html" style="display:block; margin-top:15px; font-size:0.75rem; font-weight:700; color:var(--accent); text-decoration:none; text-align:center;">NÄYTÄ KOKO KALENTERI</a>
+                        {% else %}
+                            <p style="color:var(--text-dim); font-size:0.8rem;">Ei kisoja tällä viikolla.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-container" class="category-view">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <button onclick="showHome()" style="background:#fff; border:1px solid var(--border); padding:8px 15px; border-radius:8px; cursor:pointer; font-weight: 700;">← TAKAISIN</button>
+                <select id="cat-sort" class="sort-select" onchange="updateCatSort()">
+                    <option value="newest">Uusimmat</option>
+                    <option value="views">Suosituimmat</option>
+                </select>
+            </div>
+            
+            <h2 id="cat-title" style="font-size: 2rem; font-weight: 900; text-transform: uppercase; color: var(--accent); margin-bottom: 20px;"></h2>
+            <div id="video-grid" class="video-grid"></div>
+        </div>
+        {% endif %}
+
+        {% if sivu == 'kalenteri' %}
+        <div style="background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 25px;">
+            <h2 style="text-align:center; font-weight: 900; text-transform: uppercase; margin-bottom: 30px;">Kilpailukalenteri 2026</h2>
+            <div class="filter-group">
+                <span class="section-header" style="border:none; margin-bottom:5px; display:block;">Sarja</span>
+                <div class="segmented-control">
+                    <button class="seg-btn active" onclick="updateFilters('sarja', 'all', this)">Kaikki</button>
+                    <button class="seg-btn" onclick="updateFilters('sarja', 'AKK', this)">AKK</button>
+                    <button class="seg-btn" onclick="updateFilters('sarja', 'HaMu', this)">HaMu</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="section-header" style="border:none; margin-bottom:5px; display:block;">Laji</span>
+                <div class="segmented-control">
+                    <button class="seg-btn active" onclick="updateFilters('laji', 'all', this)">Kaikki</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Ralli', this)">Ralli</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Rallisprint', this)">Rallisprint</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Jokkis', this)">Jokkis</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Drifting', this)">Drifting</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Rallicross', this)">Rallicross</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Jäärata', this)">Jäärata</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Endurance', this)">Endurance</button>
+                </div>
+            </div>
+            <div style="overflow-x:auto;">
+                <table id="calendarTable" class="full-cal-table">
+                    <thead><tr><th>PÄIVÄ</th><th>LAJI</th><th>KILPAILU</th><th>SARJA</th></tr></thead>
+                    <tbody>
+                        {% for t in kaikki_tapahtumat %}
+                        <tr data-sarja="{{ t.lahde }}" data-laji="{{ t.laji }}">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">{{ t.pvm }}</td>
+                            <td style="font-weight:600;">{{ t.laji }}</td>
+                            <td><b>{{ t.nimi }}</b><br><small style="color:var(--text-dim)">📍 {{ t.paikka }}</small></td>
+                            <td><span class="badge badge-{{ t.lahde.lower() }}">{{ t.lahde }}</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        const videoData = {{ video_data_json | default('{}') | safe }};
+        const topVideos = {{ top_10 | default('[]') | tojson | safe }};
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
