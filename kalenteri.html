@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorsport Tube 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link ">Etusivu</a>
+            <a href="kalenteri.html" class="nav-link active">Kilpailukalenteri</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+
+        
+        <div style="background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 25px;">
+            <h2 style="text-align:center; font-weight: 900; text-transform: uppercase; margin-bottom: 30px;">Kilpailukalenteri 2026</h2>
+            <div class="filter-group">
+                <span class="section-header" style="border:none; margin-bottom:5px; display:block;">Sarja</span>
+                <div class="segmented-control">
+                    <button class="seg-btn active" onclick="updateFilters('sarja', 'all', this)">Kaikki</button>
+                    <button class="seg-btn" onclick="updateFilters('sarja', 'AKK', this)">AKK</button>
+                    <button class="seg-btn" onclick="updateFilters('sarja', 'HaMu', this)">HaMu</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="section-header" style="border:none; margin-bottom:5px; display:block;">Laji</span>
+                <div class="segmented-control">
+                    <button class="seg-btn active" onclick="updateFilters('laji', 'all', this)">Kaikki</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Ralli', this)">Ralli</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Rallisprint', this)">Rallisprint</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Jokkis', this)">Jokkis</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Drifting', this)">Drifting</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Rallicross', this)">Rallicross</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Jäärata', this)">Jäärata</button>
+                    <button class="seg-btn" onclick="updateFilters('laji', 'Endurance', this)">Endurance</button>
+                </div>
+            </div>
+            <div style="overflow-x:auto;">
+                <table id="calendarTable" class="full-cal-table">
+                    <thead><tr><th>PÄIVÄ</th><th>LAJI</th><th>KILPAILU</th><th>SARJA</th></tr></thead>
+                    <tbody>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.01.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>61.  Arctic Lapland Rally</b><br><small style="color:var(--text-dim)">📍 Rovaniemi ,Kemijärvi, Ranua ja Posio</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.01.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>AS SM Klapitehtaan Kierros</b><br><small style="color:var(--text-dim)">📍 Ala-Talkkari Areena</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.01.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Rengas Turku harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Sauvo</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.01.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Viinijärvi Ralli</b><br><small style="color:var(--text-dim)">📍 Viinijärvi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.02.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>Eurosarja 1 Kotka</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Sinisalon Auto Rallisprint, Kouvola</b><br><small style="color:var(--text-dim)">📍 Kouvola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Laukaa-Uurainen talviralli</b><br><small style="color:var(--text-dim)">📍 Laukaa - Uurainen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Tuuri Historic Ralli</b><br><small style="color:var(--text-dim)">📍 ALAVUS</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jäärata">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.02.2026</td>
+                            <td style="font-weight:600;">Jäärata</td>
+                            <td><b>Paltamo SM Jäärata 1.</b><br><small style="color:var(--text-dim)">📍 Paltamo asemanranta</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Tornio Rallisprint</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>2. Jäsentenvälinen</b><br><small style="color:var(--text-dim)">📍 Kitee Race & Event</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jäärata">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.02.2026</td>
+                            <td style="font-weight:600;">Jäärata</td>
+                            <td><b>Paltamo SM Jäärata 2.</b><br><small style="color:var(--text-dim)">📍 Paltamo asemanranta</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Konepalvelu Väissi Rallisprint</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.02.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>IV Vesala AS</b><br><small style="color:var(--text-dim)">📍 Hämeenkyrö,Sastamala</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>OUA SM Rallisprint 2026</b><br><small style="color:var(--text-dim)">📍 Oulu Sanginjoki ,perintein EK. 3,75 km</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Kontiolahti Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Toivakka Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.02.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Akaa JM Talvimestaruus</b><br><small style="color:var(--text-dim)">📍 Toijalan satama</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.02.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>FTT & 12TT II  Äänekoski 2026</b><br><small style="color:var(--text-dim)">📍 Äänekosken Pienoisautoilijat RY:n sisärata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.02.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>M. Karjalainen JM Talvimestaruus</b><br><small style="color:var(--text-dim)">📍 Paltasen Autourheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Kehitys-ja testaustilaisuus</b><br><small style="color:var(--text-dim)">📍 Lammi, Hämeenlinna</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Reijo Mehtälä Oy SM-Sprint</b><br><small style="color:var(--text-dim)">📍 Siikajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.02.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>Laihian AS Puulaaki</b><br><small style="color:var(--text-dim)">📍 Alkiontie 6, 66400 Laihia</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Itä-Suomen Ralli</b><br><small style="color:var(--text-dim)">📍 Leppävirta</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Nisula Forest Rally</b><br><small style="color:var(--text-dim)">📍 Jämsä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>TerUA Harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Tervakoski</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jäärata">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.02.2026</td>
+                            <td style="font-weight:600;">Jäärata</td>
+                            <td><b>Ylivieska SM Jäärata</b><br><small style="color:var(--text-dim)">📍 Paskalanneva</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Kemi Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>GGTURBO-Sprint</b><br><small style="color:var(--text-dim)">📍 Mäntyharju</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jäärata">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.02.2026</td>
+                            <td style="font-weight:600;">Jäärata</td>
+                            <td><b>Ylivieska SM Jäärata</b><br><small style="color:var(--text-dim)">📍 Paskalanneva</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.02.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Ähtärin Talvi-JM</b><br><small style="color:var(--text-dim)">📍 Ähtäri, Mekkoranta</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>SWM Rallisprint</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>SM Auto Sorsa Riihimäki-ralli</b><br><small style="color:var(--text-dim)">📍 Riihimäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.02.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Koneurakointi Jarkko Kosunen Rallisprint</b><br><small style="color:var(--text-dim)">📍 Heinjoen moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.02.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Saarijärvi JM</b><br><small style="color:var(--text-dim)">📍 Saarijärvi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.02.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Mega-Ralli, Keuruu</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.03.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>3. Jäsentenvälinen</b><br><small style="color:var(--text-dim)">📍 Kitee Race & Event</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.03.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>XXII Kangasniemi Ralli / Seuran 60v. juhlaralli</b><br><small style="color:var(--text-dim)">📍 Kangasniemi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.03.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Leppävirta Racing Team Jäsentenväliset</b><br><small style="color:var(--text-dim)">📍 Rantasalmen Moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.03.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>ISRA Warmup #1</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.03.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>FinTrack Tour & 12Track tour 3</b><br><small style="color:var(--text-dim)">📍 Hyvinkää</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.03.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Rallisprint, Rautavaara</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.03.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Itä-Suomen Ralli</b><br><small style="color:var(--text-dim)">📍 Rautavaara</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.03.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Kuhmo Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.03.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>VRC Winter Rallispecial</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.03.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Alkkulan jää JM</b><br><small style="color:var(--text-dim)">📍 Ylitornio, Alkkula Tornionjoen jää</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.03.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>AS IV Savon Suhhaas</b><br><small style="color:var(--text-dim)">📍 Siilinjärvi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.03.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>FinTrack Tour & 12Track tour 4</b><br><small style="color:var(--text-dim)">📍 Hyvinkää</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">11.04.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Ala-Talkkari Areena Asfaltti JM</b><br><small style="color:var(--text-dim)">📍 Ala-Talkkari Areena</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">11.04.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Asfalttisprint</b><br><small style="color:var(--text-dim)">📍 Alastaro</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.04.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>Eurosport SM 2026 - Kotka</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.04.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>26. KUPLA-Kuhmut</b><br><small style="color:var(--text-dim)">📍 Risten Rata, Kokemäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">25.04.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kevät JM</b><br><small style="color:var(--text-dim)">📍 Hangassuon JM rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">25.04.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Oili Jalonen harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Pöytyä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.04.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Kevätpäräys 2026</b><br><small style="color:var(--text-dim)">📍 Porin FK Rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">02.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Rengas Turku harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Salo</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">03.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>XXXV Asfalttikunkku</b><br><small style="color:var(--text-dim)">📍 Kemoran moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">03.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Xmeal Asfalttiralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Chicago Drift</b><br><small style="color:var(--text-dim)">📍 Lahden urheilu- ja messukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>Crosskart SM Pieksämäki</b><br><small style="color:var(--text-dim)">📍 Paltasen autourheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Huittisten Laatupalvelu JM</b><br><small style="color:var(--text-dim)">📍 Kuninkaisten moottorirata,Huittinen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Äitienpäivä JM</b><br><small style="color:var(--text-dim)">📍 Tykkimäen moottorirata Kouvola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Autohuolto.com Ralli, Sastamala</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Harraste">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.05.2026</td>
+                            <td style="font-weight:600;">Harraste</td>
+                            <td><b>Arkala JR</b><br><small style="color:var(--text-dim)">📍 OuluZone, Kuusamontie 3250, Ylikiiminki, 91310</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.05.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Auto-Din SM Asfaltti Sprint</b><br><small style="color:var(--text-dim)">📍 Horsbäck ( Teollisuusalue )</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.05.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Nordic Cup 2026</b><br><small style="color:var(--text-dim)">📍 Mika Salo Circuit</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Heinolan Helatorstai JM</b><br><small style="color:var(--text-dim)">📍 Komostenkylän JM rata Heinola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Pesämäki Helatorstai JM</b><br><small style="color:var(--text-dim)">📍 Pesämäen moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.05.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>1. Rallicross SM Hyvinkää</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Raisio ralli</b><br><small style="color:var(--text-dim)">📍 Raisio</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kevät-Mylly</b><br><small style="color:var(--text-dim)">📍 Ylämyllyn Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Särkikangas JM</b><br><small style="color:var(--text-dim)">📍 Särkikankaan moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Harraste">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.05.2026</td>
+                            <td style="font-weight:600;">Harraste</td>
+                            <td><b>JR Uljua</b><br><small style="color:var(--text-dim)">📍 Uljuan Moottorirata, Haapavuorentie, Pulkkila, 92600</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.05.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>HISTORIC RACE BOTNIARING</b><br><small style="color:var(--text-dim)">📍 Botniaring</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.05.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Karting SM</b><br><small style="color:var(--text-dim)">📍 Vantaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.05.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>Auto Suunnistus Harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Tuusniemi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.05.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>NITRO POWER TOUR SM 1</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Touko-jm</b><br><small style="color:var(--text-dim)">📍 Kalmookangas, Härmä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.05.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC Rata</b><br><small style="color:var(--text-dim)">📍 Alastaro Circuit Alastaro</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>SM Imatra Ralli</b><br><small style="color:var(--text-dim)">📍 Imatra</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Irva JM</b><br><small style="color:var(--text-dim)">📍 Irvan moottorirata Oulainen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Karstula JM</b><br><small style="color:var(--text-dim)">📍 Vallitien maarata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.05.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Harjoitusralli / Testi-EK, Sastamala</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Ala-Talkkari Drift SM Pro2</b><br><small style="color:var(--text-dim)">📍 Ala-Talkkari Areena</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Series Finland 2026</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>RallyX Honkajoki</b><br><small style="color:var(--text-dim)">📍 Pesämäen Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Endurance">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Endurance</td>
+                            <td><b>Endurance Cup 2026</b><br><small style="color:var(--text-dim)">📍 Alastaro Circuit Alastaro</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Motourakointi Föhr Oy JM</b><br><small style="color:var(--text-dim)">📍 Turkkimäen JM Rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Päijät-Hämeen Autohuolto JM</b><br><small style="color:var(--text-dim)">📍 Tullinportin JM rata Vesivehmaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Somero JM</b><br><small style="color:var(--text-dim)">📍 Somura</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Äetsä JM</b><br><small style="color:var(--text-dim)">📍 Huittinen, Kuninkainen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.05.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Flying Finn Raket Cup</b><br><small style="color:var(--text-dim)">📍 Jämsä Fk -Rata  Haaralantie 101 Jämsä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">31.05.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Romukulma JM</b><br><small style="color:var(--text-dim)">📍 Haapavuoren moottorirata Pihtipudas</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Drfting SM Oulu Pro/Pro2</b><br><small style="color:var(--text-dim)">📍 OuluZone</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>2. Rallicross SM Kouvola</b><br><small style="color:var(--text-dim)">📍 Tykkimäen Moottorirata Kouvola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Endurance">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Endurance</td>
+                            <td><b>Endurance Cup 2026</b><br><small style="color:var(--text-dim)">📍 Botniaring Jurva</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>F-Cup Pohjanmaa Ralli</b><br><small style="color:var(--text-dim)">📍 Seinäjoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM Paltanen</b><br><small style="color:var(--text-dim)">📍 Paltasen autourheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kesä Kapina JM</b><br><small style="color:var(--text-dim)">📍 Nivala, Pyssymäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kinnunen Motorsport JokkisRace</b><br><small style="color:var(--text-dim)">📍 Aittokosken rata, Emäjoentie 71, Suomussalmi, 89600</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.06.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Flyinn Finn Cup</b><br><small style="color:var(--text-dim)">📍 Huhmari Karting</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.06.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Maanrakennus JM</b><br><small style="color:var(--text-dim)">📍 Kokemäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">07.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>SV-Kuivaus Liiga</b><br><small style="color:var(--text-dim)">📍 JoSeMoRa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.06.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC Botniaring</b><br><small style="color:var(--text-dim)">📍 Botniaring</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.06.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>SM Jyväskylä Ralli</b><br><small style="color:var(--text-dim)">📍 Jyväskylä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.06.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Kokkola SM Asfalttisprint</b><br><small style="color:var(--text-dim)">📍 Kokkola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>SM Pori</b><br><small style="color:var(--text-dim)">📍 Porin FK Rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Flying Finn Juniori Cup Kangasala</b><br><small style="color:var(--text-dim)">📍 Lentola Green Karting Park</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC Ahvenisto 2026</b><br><small style="color:var(--text-dim)">📍 nan</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Series Finland 2026</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM-SM EVK/Nu/Na</b><br><small style="color:var(--text-dim)">📍 Sotkan Moottorirata, Kauhajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Off Road">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">14.06.2026</td>
+                            <td style="font-weight:600;">Off Road</td>
+                            <td><b>Juhannustrial</b><br><small style="color:var(--text-dim)">📍 Raisio</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>UNICO JM KÄPPÄMÄKI</b><br><small style="color:var(--text-dim)">📍 Kärppämäen Moottorirata Kauhava</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Yöttömän Yön JM</b><br><small style="color:var(--text-dim)">📍 Juvakaisen Moottoriurheilurata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kassun Juhannus-JM</b><br><small style="color:var(--text-dim)">📍 Karvia</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.06.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Midsummer Madness</b><br><small style="color:var(--text-dim)">📍 Pesämäen Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.06.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>Yöttömän Yön Crosskart SM</b><br><small style="color:var(--text-dim)">📍 Juvakaisen Moottoriurheilurata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">21.06.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>Kassun Juhannus Crosskart SM</b><br><small style="color:var(--text-dim)">📍 Karvian moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">27.06.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Pukkila Ralli</b><br><small style="color:var(--text-dim)">📍 PUKKILA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">27.06.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>PH-Peltiasennus Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.06.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>ISRA EM 2026 - Kotka</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.06.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>FUEL POWER TOUR SM2 & NITRO POWER TOUR SM 2</b><br><small style="color:var(--text-dim)">📍 TAMPERE AASI AREENA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">28.06.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Riekkola Infra JM SM</b><br><small style="color:var(--text-dim)">📍 Pello Kittisvaara</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.07.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>3. Rallicross SM Härmä</b><br><small style="color:var(--text-dim)">📍 Kalmookankaan Moottorirata, Alahärmä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.07.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>HYAcenter ralli</b><br><small style="color:var(--text-dim)">📍 Pirkanmaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Karnevaali Jm</b><br><small style="color:var(--text-dim)">📍 Ralliraitti</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kesä Kuhmut</b><br><small style="color:var(--text-dim)">📍 Kokemäki, Risten rata.</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Off Road">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.07.2026</td>
+                            <td style="font-weight:600;">Off Road</td>
+                            <td><b>Montenegro Off Road Club SM-trial 2026</b><br><small style="color:var(--text-dim)">📍 Keihäskankaan Moottorirata-alue, Luotosentie 193, 54500  Taavetti</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.07.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>DRIFT SM Pro/Pro2 2026 HYVINKÄÄ</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Flying Finn Raket cup Töysä</b><br><small style="color:var(--text-dim)">📍 Kartingrata Töysä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.07.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>Crosskart SM Koivuniemi</b><br><small style="color:var(--text-dim)">📍 Koivuniemi, Eurajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM-Kalajoki</b><br><small style="color:var(--text-dim)">📍 Isokallion moottorirata, Kalajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">11.07.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC Estonian Grand Prix</b><br><small style="color:var(--text-dim)">📍 Porsche Ring, Pärnu</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">11.07.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Powerpark Drift</b><br><small style="color:var(--text-dim)">📍 Powerpark Härmä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>39.Poikkinaintiajot</b><br><small style="color:var(--text-dim)">📍 Kittisvaaran moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Karting SM Kimi Circuit</b><br><small style="color:var(--text-dim)">📍 Lappeenranta</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.07.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Drift Masters Round 4/Ahvenisto Race Circuit</b><br><small style="color:var(--text-dim)">📍 Ahvenisto Race Circuit</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">17.07.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Lappeenranta Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">18.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>AL-Härmä 60v. JM Juhlakisa</b><br><small style="color:var(--text-dim)">📍 Kalmookankaan Moottorirata, Alahärmä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Endurance">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">18.07.2026</td>
+                            <td style="font-weight:600;">Endurance</td>
+                            <td><b>Endurance Cup 2026</b><br><small style="color:var(--text-dim)">📍 Kymiring Kausala</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">18.07.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Happy Beach SM Asfalttisprint</b><br><small style="color:var(--text-dim)">📍 Vaala</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.07.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>CrossKart OuluZone</b><br><small style="color:var(--text-dim)">📍 OuluZone</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Series Finland 2026</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Karting SM Kangasala</b><br><small style="color:var(--text-dim)">📍 Lentola Green Karting Park</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Salo Jokkis</b><br><small style="color:var(--text-dim)">📍 JM-rata Somura</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">25.07.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Ralli</b><br><small style="color:var(--text-dim)">📍 Pirkanmaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.07.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>ISRA Warmup #2</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.07.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>40. Kardaanikunkku</b><br><small style="color:var(--text-dim)">📍 Kaanaa Center</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.07.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>Historic race Kemora</b><br><small style="color:var(--text-dim)">📍 Kemoran moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.07.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Vetomies</b><br><small style="color:var(--text-dim)">📍 Jyväskylä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.08.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Drifting SM Pro/Pro2 Pesämäki</b><br><small style="color:var(--text-dim)">📍 Pesämäen Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Karvia Päivä JM</b><br><small style="color:var(--text-dim)">📍 Karvian moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">01.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Puolangan Vaarat XVII</b><br><small style="color:var(--text-dim)">📍 Puolanka, Roninkangas</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">02.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Secto Rally Finland</b><br><small style="color:var(--text-dim)">📍 Jyväskylä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">02.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Korkatti JM</b><br><small style="color:var(--text-dim)">📍 Korkatin moottorirata Haapavesi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">02.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>WALLIUS JM</b><br><small style="color:var(--text-dim)">📍 Somuran Moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>4. Rallicross SM Oulu</b><br><small style="color:var(--text-dim)">📍 OuluZone</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC Kemora</b><br><small style="color:var(--text-dim)">📍 Kemoran moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>KRS JM</b><br><small style="color:var(--text-dim)">📍 Kristiinankaupunki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>Lakeuren ST</b><br><small style="color:var(--text-dim)">📍 Seinäjoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>X HausUA JM</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">08.08.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Turun Ajovaruste Rallisprint</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Hulkkonen Yhtiöt JM</b><br><small style="color:var(--text-dim)">📍 Paltasen autourheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.08.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Auto-Din JM</b><br><small style="color:var(--text-dim)">📍 Tammisaaren JM rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.08.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>FUEL POWER TOUR SM 4</b><br><small style="color:var(--text-dim)">📍 TAMPERE AASI AREENA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">09.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM-HUHA</b><br><small style="color:var(--text-dim)">📍 Huhan moottorirata Purontaka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Kitee SM ralli</b><br><small style="color:var(--text-dim)">📍 Keski-Karjala</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kokemäen Kuhmut</b><br><small style="color:var(--text-dim)">📍 Risten Rata, Kokemäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Lapinlahti JM</b><br><small style="color:var(--text-dim)">📍 Lapinlahti</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>SORAKUNKKU XXXIII</b><br><small style="color:var(--text-dim)">📍 Måtasberget, Jepua</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">15.08.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Rallisprint, Siikajoki</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>Historic Grand Race</b><br><small style="color:var(--text-dim)">📍 Ahveniston Moottorirata, Hämeenlinna</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Flying Finn Juniori Cup Imatra</b><br><small style="color:var(--text-dim)">📍 Saarlammin Kartingrata, Karjalantie 777, 55800 IMATRA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Series Finland 2026</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>ELHO Crosskart SM Jepua</b><br><small style="color:var(--text-dim)">📍 Måtasberget, Jepua</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Koniwatit Valloillaan</b><br><small style="color:var(--text-dim)">📍 Kotkan MU-keskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>NITRO POWER TOUR SM 4</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">16.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>XXXVIII Ähtärin Ähellys</b><br><small style="color:var(--text-dim)">📍 Karstula, Vallitien Vauhtirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Lahti Historic Rally</b><br><small style="color:var(--text-dim)">📍 Lahti</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Ralli</b><br><small style="color:var(--text-dim)">📍 Lahti</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>5. Rallicross SM Honkajoki</b><br><small style="color:var(--text-dim)">📍 Pesämäen moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Harjoituskilpailu</b><br><small style="color:var(--text-dim)">📍 Sauvo</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>VaToSUA JM</b><br><small style="color:var(--text-dim)">📍 Akaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Harraste">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Harraste</td>
+                            <td><b>Euroopan Kulttuurikaupunki 2026 JR SM</b><br><small style="color:var(--text-dim)">📍 OuluZone, Kuusamontie 3250, Ylikiiminki, 91310</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">22.08.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Saunamaailma.pro Rallisprint</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.08.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>Finnish Open 2026 - Kotka</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.08.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Rotax Max Challenge</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Jokamiehen Kiekaus</b><br><small style="color:var(--text-dim)">📍 Laitila</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Murtoharju JM</b><br><small style="color:var(--text-dim)">📍 Jalasjärvi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Drifting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.08.2026</td>
+                            <td style="font-weight:600;">Drifting</td>
+                            <td><b>Drift SM Pro Ahvenisto</b><br><small style="color:var(--text-dim)">📍 Ahveniston moottorirata, Hämeenlinna</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Endurance">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.08.2026</td>
+                            <td style="font-weight:600;">Endurance</td>
+                            <td><b>Endurance Cup 2026</b><br><small style="color:var(--text-dim)">📍 Kemora Veteli</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.08.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Leppävirta SM-Rallisprint</b><br><small style="color:var(--text-dim)">📍 Puponmäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.08.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>SM Rallisprint Raahe</b><br><small style="color:var(--text-dim)">📍 Kiiluntie / Kiilun moottorirata, Raahe</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">29.08.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Maanrakennus Sjöberg Rallispecial</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">30.08.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Alatalot JM SM Liiga 2026</b><br><small style="color:var(--text-dim)">📍 Karvian Moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>Karting SM</b><br><small style="color:var(--text-dim)">📍 ----</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallicross">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Rallicross</td>
+                            <td><b>6. Rallicross SM Jalasjärvi</b><br><small style="color:var(--text-dim)">📍 Murtoharjun moottorirata, Jalasjärvi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Haapakumpu JM</b><br><small style="color:var(--text-dim)">📍 Kiuruvesi / Haapakumpu</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Koillis-Savo Ralli</b><br><small style="color:var(--text-dim)">📍 Tuusniemi</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Off Road">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Off Road</td>
+                            <td><b>MMR SM Trial</b><br><small style="color:var(--text-dim)">📍 Mäntsälä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>XXI Syys-ST</b><br><small style="color:var(--text-dim)">📍 Pirkanmaa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">05.09.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>Rallisprint, Sastamala</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.09.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>Historic Kymi Race</b><br><small style="color:var(--text-dim)">📍 Kymiring</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Karting">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.09.2026</td>
+                            <td style="font-weight:600;">Karting</td>
+                            <td><b>IAME Series Finland 2026</b><br><small style="color:var(--text-dim)">📍 TBA</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>23. Raisio JM</b><br><small style="color:var(--text-dim)">📍 Somero</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">06.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Mäntyharjun Moottorikerho JM</b><br><small style="color:var(--text-dim)">📍 Mäntyharjun Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Nuuskakaira JM</b><br><small style="color:var(--text-dim)">📍 Pello Kittisvaara</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Syys JM</b><br><small style="color:var(--text-dim)">📍 Hangassuon JM rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="HaMu" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">12.09.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Parkano Ralli</b><br><small style="color:var(--text-dim)">📍 Harrastepaikka</small></td>
+                            <td><span class="badge badge-hamu">HaMu</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Crosskart">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.09.2026</td>
+                            <td style="font-weight:600;">Crosskart</td>
+                            <td><b>Crosskart SM</b><br><small style="color:var(--text-dim)">📍 Särkikankaan Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>EVK-Liiga</b><br><small style="color:var(--text-dim)">📍 Ylämyllyn Moottoriurheilukeskus</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">13.09.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>FRC KymiRing</b><br><small style="color:var(--text-dim)">📍 KymiRing</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>AS V Savon Suhhaas</b><br><small style="color:var(--text-dim)">📍 Pohjois-Savo</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Endurance">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Endurance</td>
+                            <td><b>Endurance Cup 2026</b><br><small style="color:var(--text-dim)">📍 Botniaring Jurva</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Irva JM</b><br><small style="color:var(--text-dim)">📍 Irvan moottorirata Oulainen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>L-HUA JM</b><br><small style="color:var(--text-dim)">📍 Risten rata, Kokemäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>MRF Tyres SM Sprint</b><br><small style="color:var(--text-dim)">📍 Ylistaro asema</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Sotka-JM</b><br><small style="color:var(--text-dim)">📍 Sotkan Moottorirata, Kauhajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">19.09.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>XLIX RANTARALLI</b><br><small style="color:var(--text-dim)">📍 Mynämäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Syysrylläys</b><br><small style="color:var(--text-dim)">📍 Tykkimäen Moottorirata Kouvola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rata-ajo">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.09.2026</td>
+                            <td style="font-weight:600;">Rata-ajo</td>
+                            <td><b>MRT rata</b><br><small style="color:var(--text-dim)">📍 Botniaring Jurva</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>TC-King JM Lappajärvi</b><br><small style="color:var(--text-dim)">📍 Särkiniemen moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">20.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>XLI Koivuniemen Syys-JM</b><br><small style="color:var(--text-dim)">📍 Koivuniemi, Eurajoki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.09.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Porvoon Autopalvelu Ralli-SM</b><br><small style="color:var(--text-dim)">📍 Porvoo</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM-Kilpailu</b><br><small style="color:var(--text-dim)">📍 JoSeMoRa</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM-Kokkola</b><br><small style="color:var(--text-dim)">📍 Kemora</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">26.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Nokia JM</b><br><small style="color:var(--text-dim)">📍 Nokian JM-rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">27.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>JM- KÄRPPÄMäKI</b><br><small style="color:var(--text-dim)">📍 Kärppämäen Moottorirata Kauhava</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">27.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Jyrki Kuittinen Oy JM</b><br><small style="color:var(--text-dim)">📍 Turkkimäen JM Rata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">27.09.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>ÄSSÄ JM XLI</b><br><small style="color:var(--text-dim)">📍 Somura</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">03.10.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Puumala ralli</b><br><small style="color:var(--text-dim)">📍 Puumala</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">03.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Ala-Talkkari Areena Asfaltti Jm</b><br><small style="color:var(--text-dim)">📍 Ala-Talkkari Areena</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">03.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Vihdin Viuhahdus JM</b><br><small style="color:var(--text-dim)">📍 Hyvinkään Vauhtipuisto</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kuljetus Pasi Koskinen JM</b><br><small style="color:var(--text-dim)">📍 Kuninkaisten Moottorirata,Huittinen</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">04.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Vallitien Vauhtiajot</b><br><small style="color:var(--text-dim)">📍 Vallitien maarata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Pienoisautoilu">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.10.2026</td>
+                            <td style="font-weight:600;">Pienoisautoilu</td>
+                            <td><b>ISRA MM 2026</b><br><small style="color:var(--text-dim)">📍 Kotka</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Ralli">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.10.2026</td>
+                            <td style="font-weight:600;">Ralli</td>
+                            <td><b>Jari-Pekka ralli</b><br><small style="color:var(--text-dim)">📍 Hartola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Rallisprint">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.10.2026</td>
+                            <td style="font-weight:600;">Rallisprint</td>
+                            <td><b>SM Oili Jalonen Rallisprint I</b><br><small style="color:var(--text-dim)">📍 Laitila</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Särkikangas JM</b><br><small style="color:var(--text-dim)">📍 Särkikankaan moottorirata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">10.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>XIV Härmä JM</b><br><small style="color:var(--text-dim)">📍 Kalmookankaan Moottorirata, Alahärmä</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">11.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Pikkusuo JM</b><br><small style="color:var(--text-dim)">📍 Pikkusuon moottorirata Inkeroinen Kouvola</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">18.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Reiskan Rähinät</b><br><small style="color:var(--text-dim)">📍 Alastaro</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">23.10.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>Härkätien Lenkki 2026</b><br><small style="color:var(--text-dim)">📍 Renko, Hämeenlinna</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Autosuunnistus">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">24.10.2026</td>
+                            <td style="font-weight:600;">Autosuunnistus</td>
+                            <td><b>SM/NAC Syyseksytys</b><br><small style="color:var(--text-dim)">📍 Riihimäki</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                        <tr data-sarja="AKK" data-laji="Jokkis">
+                            <td style="font-weight:800; color:var(--accent); white-space:nowrap;">25.10.2026</td>
+                            <td style="font-weight:600;">Jokkis</td>
+                            <td><b>Kinkku JM</b><br><small style="color:var(--text-dim)">📍 Virrat, Jäähdyrata</small></td>
+                            <td><span class="badge badge-akk">AKK</span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const videoData = {};
+        const topVideos = "[]";
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
