@@ -2,21 +2,20 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorsport Tube 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar"><div class="nav-container">
-        <a href="index.html" class="nav-link {% if sivu == 'etusivu' %}active{% endif %}">Etusivu</a>
-        <a href="kalenteri.html" class="nav-link {% if sivu == 'kalenteri' %}active{% endif %}">Kilpailukalenteri</a>
-    </div></nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link {% if sivu == 'etusivu' %}active{% endif %}">Etusivu</a>
+            <a href="kalenteri.html" class="nav-link {% if sivu == 'kalenteri' %}active{% endif %}">Kilpailukalenteri</a>
+        </div>
+    </nav>
 
     <div class="container">
-        
-
         {% if sivu == 'etusivu' %}
         <div id="home-content">
             <h1 style="text-align:center; font-weight: 900; font-style: italic; margin: 10px 0 30px 0; font-size: 2.5rem;">MOTORSPORT <span style="color:var(--accent)">TUBE</span></h1>
@@ -135,8 +134,6 @@
         const videoData = {{ video_data_json | default('{}') | safe }};
         const topVideos = {{ top_10 | default('[]') | tojson | safe }};
     </script>
-
     <script src="script.js"></script>
 </body>
-
 </html>
