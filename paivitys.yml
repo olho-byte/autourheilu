@@ -4,6 +4,7 @@ on:
   schedule:
     # Ajat ovat UTC-ajassa (Suomen aika -2h)
     - cron: '30 3 * * *'   # Klo 05:30 Suomen aikaa
+    - cron: '30 8 * * *'   # Klo 10:30 Suomen aikaa (TÄSTÄ NÄET TOIMIIKO NYT)
     - cron: '6 10 * * *'   # Klo 12:06 Suomen aikaa
     - cron: '6 15 * * *'   # Klo 17:06 Suomen aikaa
   
