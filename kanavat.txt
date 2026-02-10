@@ -2,7 +2,7 @@
 --- HAKU: Drifting suomi ---
 "UCR9bEqWxOhmeT-vo88kyLFQ", # Black Smoke Ltd
 "UCPfNSCJT2fQqcmB61B2cHRA",
-"UCJVScxGxdOiOuQjZq2DqoEg", #Heinonen Drift Team
+"UCJVScxGxdOiOuQjZq2DqoEg", # Heinonen Drift Team
 "UCBldqXFAEd6tgkVuGYMIFqQ", #"Makosa Drift Team": 
 "UCVM7vvLnGDi0SK8Vld28wcQ", #"Suomen Drifting Ry  / FPDA": 
 "UC6rwUxdTOtORA3KL3q3r7pQ", #"Drift Masters": 
@@ -15,6 +15,17 @@
 "UCADIPaW4yjyzaCLvdoAQZtA", #"Koskela Motorsport": 
 "UCXvoTU9ZOs4v2JNObQ_au8g", #"Tase": 
 "UCEzKtxz7e_DwBLXrupza0qA", #"DankkeRacing"
+"UC_EMLQdVjlxY-DsNbG0X3kA", # Maailmanlopun vehkeet
+"UCk6anzoIxEHSea9yfpxGivA", # PanicRev Motorsport
+"UCwjJ5ukyUPZcr1-WT6f4RhQ", # NKD motorsport
+"UCcbbKHkP_j5OtW2eYwkMTRQ", # LeiskaFi
+"UCbX9otT9x40k4TzhkO35jNQ", # finndrift
+"UCJ66KYY4u1qQNyBP_4WvDXw", # JRJ Garage
+"UCgoD7sH-ez8gAy9eGC1b9hA", # POWER2DRIFT TEAM
+"UCKpbJFw6-wCGjnkmoAORcAw", # Kaukonen66
+"UCvitKW-z8SUQBk7Awq78ioQ", # PhooliVlog
+"UCMmDP5po1DtnEoTw3KBaDkg", # Chaser Drift Team
+
 
 --- HAKU: Jokkis ---
 "UCiAI4ZEa1Ne5hAbc_eWHYpQ", # JM-Jokkis
@@ -27,7 +38,8 @@
 "Kirwelä Racing": UCmLLwfXz-iw290tf68JoyBg
 "Toni Tiainen": UCCvVrhkxtLSgEizM8U7_m4A
 "Hälvän paja": UCJwGov-cX06KCM_9DJqrWTA
-
+"UCnjo4jtQR-PmzgcpC5qAQAg", #Lehtiniemi Motorsport
+"UCfBxwGNRn0Jy8LTvvVA1Nvg", #J-E Lönn Motorsport Videos
 
 --- HAKU: Rallicross ---
 "UCXGngJAepcvg2n_1MXOQR-Q", # Rallicross Suomi
@@ -37,6 +49,7 @@
 "UCvPiJx-CS51voG0QGPyay0g", # hh Racing
 "UCk508egX0VyPzNAe9Kmq0fA", # Mullet Racing 
 "UCnwFWjc9jiNrHTypapKG98A", # TiKrx
+"UCMk6wzzdaYu_DMpTNtxH-Aw", # Tuomas Venäläinen RX
 
 
 --- HAKU: Ralli ---
@@ -55,6 +68,10 @@
 "Saku Kinnunen": UC70PslO93GRJ_cvBpjK8kfQ
 "KinnunenMotorsport": UC9UtIFdH4VKFXfspbJfjOVg
 "Noora Race": UCCxcmR_NkCoqwl6z503U1RA
+"UCkzHJbQ6BCVw0WAFkcaJ8vg", # P.R.F
+"UCt3jaZVlD3AzAn8F5joOuEg", # Tuukka Kauppinen
+
+
 
 
 
@@ -66,6 +83,10 @@
 "UCDGbcZh2sGrEtZW-ObW_Fqw", # LATELA Suomi
 "UCs776iGXY3X5FmcdvmBVjRQ", # Latela
 "UCQTG99cJ_tqiWl59HTjbqIw", # latela
+"UCDjjD2kGVdUeSRH0uthLi5Q", # PutteEevertti
+"UCXePabK5BqOdAmihSDrc-LQ", # Kokkolan Autohuolto
+"UCLH22xetRmOKaGct2A90MNQ", # NeniTony
+"UCAvkydMr62SxTPQoq4-UrXA", # Markus Martelius
 
 
 --- HAKU: Simracing ---
@@ -83,3 +104,6 @@
 "UCpvyBO_G6zKLZPPOFFOcC9Q", # TeeHoo
 "UCcRvuX6E5vD4kwCDNS4F6jg", # JaniR
 "UCrdD82TOsaipBtYmJMJ3hnw", # vjollila96
+"UCq0Jo8-Si67mXlCWpCstvzg", # BTBfin RALLYsim
+"UCmUzHHVuc4mu1QlPUKE29SQ", # TonseiSensei
+
