@@ -2,8 +2,11 @@ name: Päivitä Runki.fi videot
 
 on:
   schedule:
-    # Aja joka aamu klo 06:00 UTC (n. klo 08 tai 09 Suomen aikaa)
-    - cron: '0 6 * * *'
+    # Ajat ovat UTC-ajassa (Suomen aika -2h)
+    - cron: '30 3 * * *'   # Klo 05:30 Suomen aikaa
+    - cron: '6 10 * * *'   # Klo 12:06 Suomen aikaa
+    - cron: '6 15 * * *'   # Klo 17:06 Suomen aikaa
+  
   workflow_dispatch: # Mahdollistaa päivityksen käynnistämisen napista manuaalisesti
 
 permissions:
@@ -36,4 +39,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🤖 Robotti päivitti videot ja kalenterin"
-          file_pattern: "*.html" # Päivittää vain index.html ja kalenteri.html
+          file_pattern: "*.html"
