@@ -1,0 +1,39 @@
+name: Päivitä Runki.fi videot
+
+on:
+  schedule:
+    # Aja joka aamu klo 06:00 UTC (n. klo 08 tai 09 Suomen aikaa)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Mahdollistaa päivityksen käynnistämisen napista manuaalisesti
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Lataa sivuston tiedostot (Checkout)
+        uses: actions/checkout@v4
+
+      - name: 🐍 Asenna Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 📦 Asenna kirjastot
+        run: |
+          pip install -r requirements.txt
+
+      - name: 🚀 Aja sivuston luonti (Python)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          python luo_sivusto.py
+
+      - name: 💾 Tallenna ja lähetä muutokset (Commit & Push)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Robotti päivitti videot ja kalenterin"
+          file_pattern: "*.html" # Päivittää vain index.html ja kalenteri.html
