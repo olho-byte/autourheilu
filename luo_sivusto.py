@@ -4,23 +4,13 @@ import datetime
 from googleapiclient.discovery import build
 from jinja2 import Environment, FileSystemLoader
 
-# --- ASETUKSET ---
-# 1. Yritetään lukea avain GitHubin ympäristömuuttujista (TÄMÄ ON SE TÄRKEIN KOHTA)
+# ASETUKSET
+# 1. Yritetään lukea avain GitHubin ympäristömuuttujista
 API_KEY = os.environ.get("YOUTUBE_API_KEY")
 
-# 2. Jos avainta ei löydy (esim. omalla koneella), käytetään vara-avainta.
-#    GitHubissa tämä ehto ei toteudu, jos Secret on asetettu oikein.
+# 2. Jos ei löydy (ollaan omalla koneella), käytä tätä (vaihda oma avain tähän testatessa!)
 if not API_KEY:
-    # Voit laittaa tähän oman avaimesi testausta varten lainausmerkkien väliin, 
-    # mutta älä jätä sitä tähän kun lataat GitHubiin, jos haluat pitää sen salassa.
-    API_KEY = "TÄHÄN_VOIT_LAITTAA_AVAIMEN_PAIKALLISTA_TESTAUSTA_VARTEN"
-
-# Tulostetaan lokiin tietoa (ei itse avainta), jotta nähdään toimiiko se
-if API_KEY and not API_KEY.startswith("TÄHÄN"):
-    print(f"✅ API-avain löytyi (pituus: {len(API_KEY)} merkkiä).")
-else:
-    print("⚠️ VAROITUS: Oikeaa API-avainta ei löytynyt. Videohaut saattavat epäonnistua.")
-# -----------------
+    API_KEY = "TÄHÄN_SE_PITKÄ_AVAIN_JOS_OLET_OMALLA_KONEELLA"
 
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
@@ -35,47 +25,56 @@ KATEGORIAT = {
 }
 
 def hae_videot(haku_termit):
-    # Jos avain on yhä oletusarvossa, ei voida hakea
     if not API_KEY or API_KEY.startswith("TÄHÄN"):
+        # Estetään virhe jos avainta ei ole asetettu
         return []
 
     try:
         youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=API_KEY)
-        videot = []
         q = "|".join(haku_termit)
         
+        # Haetaan videot (poistettu aikarajoitus jotta varmasti löytyy sisältöä)
         search_response = youtube.search().list(
-            q=q, part='id,snippet', maxResults=10, order='date', type='video',
-            regionCode='FI', relevanceLanguage='fi'
+            q=q,
+            part='id,snippet',
+            maxResults=10,
+            order='date', # Uusimmat ensin
+            type='video',
+            regionCode='FI',
+            relevanceLanguage='fi'
         ).execute()
 
+        videot = []
         for search_result in search_response.get('items', []):
-            if search_result['id']['kind'] == 'youtube#video':
-                video_id = search_result['id']['videoId']
-                # Haetaan katselukerrat erikseen
-                stats_resp = youtube.videos().list(part='statistics', id=video_id).execute()
-                views_raw = int(stats_resp['items'][0]['statistics'].get('viewCount', 0))
-                
-                videot.append({
-                    'id': video_id,
-                    'title': search_result['snippet']['title'],
-                    'channel': search_result['snippet']['channelTitle'],
-                    'date': search_result['snippet']['publishedAt'],
-                    'views': f"{views_raw:,}".replace(",", " "),
-                    'viewCountRaw': views_raw
-                })
+            video_id = search_result['id']['videoId']
+            
+            # Haetaan katselukerrat
+            stats_resp = youtube.videos().list(part='statistics', id=video_id).execute()
+            if not stats_resp['items']: continue
+            
+            views_raw = int(stats_resp['items'][0]['statistics'].get('viewCount', 0))
+            
+            videot.append({
+                'id': video_id,
+                'title': search_result['snippet']['title'],
+                'channel': search_result['snippet']['channelTitle'],
+                'date': search_result['snippet']['publishedAt'],
+                'views': f"{views_raw:,}".replace(",", " "),
+                'viewCountRaw': views_raw
+            })
         return videot
     except Exception as e:
-        print(f"   ❌ Virhe haussa ({q}): {e}")
+        print(f"❌ Virhe haussa ({haku_termit}): {e}")
         return []
 
 def hae_kalenteri():
-    # Esimerkkidataa kalenteriin
+    # Kiinteä kalenteridata (tätä voi myöhemmin laajentaa hakemaan netistä)
     return [
-        {"pvm": "08.02.", "laji": "Rallisprint", "nimi": "2. Jäsentenvälinen", "paikka": "Rallisprint", "lahde": "AKK"},
-        {"pvm": "08.02.", "laji": "Jäärata", "nimi": "Paltamo SM Jäärata 2.", "paikka": "Jäärata", "lahde": "AKK"},
-        {"pvm": "14.02.", "laji": "Ralli", "nimi": "Kontiolahti Ralli", "paikka": "Ralli", "lahde": "HaMu"},
-        {"pvm": "21.02.", "laji": "Ralli", "nimi": "Hankiralli", "paikka": "Porvoo", "lahde": "AKK"}
+        {"pvm": "21.02.", "laji": "Ralli", "nimi": "Hankiralli", "paikka": "Porvoo", "lahde": "AKK"},
+        {"pvm": "28.02.", "laji": "Drifting", "nimi": "Jäärata Drifting", "paikka": "Oulu", "lahde": "HaMu"},
+        {"pvm": "28.02.", "laji": "Ralli", "nimi": "Tuuri Ralli", "paikka": "Tuuri", "lahde": "AKK"},
+        {"pvm": "07.03.", "laji": "Jokkis", "nimi": "Talvimestaruus", "paikka": "Pieksämäki", "lahde": "AKK"},
+        {"pvm": "14.03.", "laji": "Rallisprint", "nimi": "Kausala Sprint", "paikka": "Kausala", "lahde": "HaMu"}
     ]
 
 def luo_sivusto():
@@ -86,7 +85,7 @@ def luo_sivusto():
     
     # 1. Haetaan videot
     for kategoria, termit in KATEGORIAT.items():
-        print(f"   🔍 Kategoria: {kategoria}")
+        print(f"   🔍 Haetaan: {kategoria}")
         v = hae_videot(termit)
         video_data[kategoria] = v
         kaikki_videot.extend(v)
@@ -94,7 +93,7 @@ def luo_sivusto():
     # 2. Haetaan kalenteri
     tapahtumat = hae_kalenteri()
 
-    # 3. Top 10
+    # 3. Top 10 lista
     kaikki_videot.sort(key=lambda x: x['viewCountRaw'], reverse=True)
     seen = set()
     top_10 = []
@@ -104,22 +103,39 @@ def luo_sivusto():
             seen.add(v['id'])
         if len(top_10) >= 10: break
 
-    # 4. Kirjoitetaan tiedostot
-    print("📝 Kirjoitetaan HTML-tiedostot...")
+    # 4. Generoidaan HTML
+    print("📝 Kirjoitetaan tiedostoja...")
     env = Environment(loader=FileSystemLoader('.'))
     tm = env.get_template('template.html')
     now = datetime.datetime.now().strftime("%d.%m.%Y klo %H:%M")
     
-    # Tärkeä: Muunnetaan data JSONiksi, jotta sivuston haku toimii
+    # Muunnetaan JSONiksi jotta JavaScript ymmärtää sen (TÄRKEÄ!)
     v_json = json.dumps(video_data, default=str)
 
+    # Kirjoitetaan index.html
     with open('index.html', 'w', encoding='utf-8') as f:
-        f.write(tm.render(sivu='etusivu', video_data=video_data, video_data_json=v_json, top_10=top_10, viikon_tapahtumat=tapahtumat, kaikki_tapahtumat=tapahtumat, paivitetty=now))
+        f.write(tm.render(
+            sivu='etusivu', 
+            video_data=video_data, 
+            video_data_json=v_json, 
+            top_10=top_10, 
+            viikon_tapahtumat=tapahtumat, # Näytetään kaikki kalenterissa etusivulla
+            kaikki_tapahtumat=tapahtumat, 
+            paivitetty=now
+        ))
 
+    # Kirjoitetaan kalenteri.html
     with open('kalenteri.html', 'w', encoding='utf-8') as f:
-        f.write(tm.render(sivu='kalenteri', video_data=video_data, video_data_json=v_json, top_10=[], kaikki_tapahtumat=tapahtumat, paivitetty=now))
+        f.write(tm.render(
+            sivu='kalenteri', 
+            video_data=video_data, 
+            video_data_json=v_json, 
+            top_10=[], 
+            kaikki_tapahtumat=tapahtumat, 
+            paivitetty=now
+        ))
 
-    print("✅ Valmis!")
+    print("✅ Valmis! Sivusto on luotu.")
 
 if __name__ == "__main__":
     luo_sivusto()
