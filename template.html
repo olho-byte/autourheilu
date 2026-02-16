@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorsport Tube 2026</title>
+    <title>RUNKI - Motorsport Tube</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Sähköpostilaatikko ja Footer-tyylit */
+        .feedback-section {
+            background-color: #fff;
+            border-top: 1px solid var(--border);
+            padding: 50px 20px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .email-box {
+            background: #f8f9fa;
+            border: 2px dashed #ddd;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .email-link {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--text-dark);
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+        .email-link:hover { color: var(--accent); }
+        .feedback-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        .feedback-btn:hover { transform: scale(1.05); }
+
+        /* Footer */
+        .site-footer {
+            background-color: #111;
+            color: #888;
+            padding: 50px 20px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .footer-content { max-width: 900px; margin: 0 auto; }
+        .footer-links {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #333;
+        }
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 700;
+        }
+        .footer-links a:hover { color: #fff; }
+        .contact-info {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            border: 1px solid #333;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +97,7 @@
     <div class="container">
         {% if sivu == 'etusivu' %}
         <div id="home-content">
-            <h1 style="text-align:center; font-weight: 900; font-style: italic; margin: 10px 0 30px 0; font-size: 2.5rem;">MOTORSPORT <span style="color:var(--accent)">TUBE</span></h1>
+            <h1 style="text-align:center; font-weight: 900; font-style: italic; margin: 10px 0 30px 0; font-size: 2.5rem;">RUNKI <span style="color:var(--accent)">.FI</span></h1>
             
             <div class="cat-section">
                 <h3 class="section-header">Videokirjasto</h3>
@@ -73,7 +152,7 @@
             </div>
         </div>
 
-        <div id="view-container" class="category-view">
+        <div id="view-container" class="category-view" style="display:none;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
                 <button onclick="showHome()" style="background:#fff; border:1px solid var(--border); padding:8px 15px; border-radius:8px; cursor:pointer; font-weight: 700;">← TAKAISIN</button>
                 <select id="cat-sort" class="sort-select" onchange="updateCatSort()">
@@ -129,6 +208,39 @@
         </div>
         {% endif %}
     </div>
+
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <h3 style="margin-bottom:10px; font-weight:900; text-transform:uppercase;">Puuttuuko kanava tai kisa?</h3>
+            <p style="color:#666; margin-bottom:20px; font-size:1rem; line-height:1.5;">
+                Huomasitko puutteen tai onko sinulla kehitysehdotus?<br>
+                Laita meille sähköpostia, niin hoidetaan homma kuntoon!
+            </p>
+            <div class="email-box">
+                <span style="color:#888; font-size:0.9rem;">Ota yhteyttä:</span>
+                <a href="mailto:info@runki.fi" class="email-link">info@runki.fi</a>
+            </div>
+            <br>
+            <a href="mailto:info@runki.fi" class="feedback-btn">LÄHETÄ SÄHKÖPOSTIA 📧</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.youtube.com/t/terms" target="_blank">YouTuben käyttöehdot</a>
+                <span style="color:#333">•</span>
+                <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuoja</a>
+            </div>
+            <div class="legal-text">
+                <p><strong>Vastuuvapaus & Tekijänoikeudet:</strong></p>
+                <p>Tämä on epävirallinen harrasteprojekti. Sivusto ei ole AKK:n tai HaMun virallinen palvelu.</p>
+                <p>Sivusto käyttää YouTube API -palveluita.</p>
+                <div class="contact-info">📧 Ylläpito: <strong>info@runki.fi</strong></div>
+            </div>
+            <p style="margin-top: 30px; opacity: 0.5;">&copy; 2026 Runki.fi</p>
+        </div>
+    </footer>
 
     <script>
         const videoData = {{ video_data_json | default('{}') | safe }};

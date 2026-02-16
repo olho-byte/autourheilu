@@ -2,23 +2,21 @@ name: Päivitä Runki.fi videot
 
 on:
   schedule:
-    # Ajat ovat UTC-ajassa (Suomen aika -2h)
-    - cron: '30 3 * * *'   # Klo 05:30 Suomen aikaa
-    - cron: '30 8 * * *'   # Klo 10:30 Suomen aikaa (TÄSTÄ NÄET TOIMIIKO NYT)
-    - cron: '6 10 * * *'   # Klo 12:06 Suomen aikaa
-    - cron: '6 15 * * *'   # Klo 17:06 Suomen aikaa
-  
-  workflow_dispatch: # Mahdollistaa päivityksen käynnistämisen napista manuaalisesti
+    # Kellonajat (UTC): 03:30 (Suomi 05:30), 10:06 (Suomi 12:06), 15:06 (Suomi 17:06)
+    - cron: '30 3 * * *'
+    - cron: '6 10 * * *'
+    - cron: '6 15 * * *'
+  workflow_dispatch: # Manuaalinen käynnistysnappi
 
 permissions:
-  contents: write
+  contents: write # Tämä antaa luvan tallentaa index.html
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Lataa sivuston tiedostot (Checkout)
+      - name: 📥 Lataa sivuston tiedostot
         uses: actions/checkout@v4
 
       - name: 🐍 Asenna Python
@@ -28,16 +26,18 @@ jobs:
 
       - name: 📦 Asenna kirjastot
         run: |
-          pip install -r requirements.txt
+          pip install google-api-python-client jinja2
 
-      - name: 🚀 Aja sivuston luonti (Python)
+      - name: 🚀 Aja sivuston luonti
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           python luo_sivusto.py
 
-      - name: 💾 Tallenna ja lähetä muutokset (Commit & Push)
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🤖 Robotti päivitti videot ja kalenterin"
-          file_pattern: "*.html"
+      - name: 💾 Tallenna muutokset
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          git add index.html kalenteri.html
+          git commit -m "🤖 Automaattinen päivitys" || echo "Ei uusia videoita tallennettavaksi"
+          git push
